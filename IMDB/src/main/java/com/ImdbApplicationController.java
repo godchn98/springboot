@@ -13,7 +13,7 @@ import com.workbook2.IMDB.Show;
 @Controller
 public class ImdbApplicationController {
     
-    @GetMapping("/")
+    @GetMapping("/shows")
     public ModelAndView getShows() {
         Map<String, Show> model = new HashMap<String, Show>();
         model.put("first", new Show("Breaking Bad", "Ozymandias", 10.0));

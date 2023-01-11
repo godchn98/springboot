@@ -1,1 +1,1 @@
-# hello-spring-vs
+# Learning Spring Boot with various projects

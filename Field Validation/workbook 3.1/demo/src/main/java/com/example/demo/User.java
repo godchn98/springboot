@@ -5,10 +5,12 @@ import java.sql.Date;
 import javax.xml.crypto.Data;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 public class User {
     
     @NotBlank(message = "First Name cannot be blank")
+    @Size(min = 2)
     private String firstName;
     @NotBlank(message = "Last Name cannot be blank")
     private String lastName;

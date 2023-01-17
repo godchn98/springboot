@@ -11,7 +11,7 @@ import jakarta.validation.Valid;
 
 public class DemoAppliicaionController {
     
-    @GetMapping("/")
+    @GetMapping("/sign-up")
     public String getForm(Model model) {
         model.addAttribute("user", new User());
         return "sign-up";

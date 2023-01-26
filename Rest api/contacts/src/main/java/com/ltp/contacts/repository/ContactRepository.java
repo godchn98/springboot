@@ -11,9 +11,7 @@ import com.ltp.contacts.pojo.Contact;
 @Repository
 public class ContactRepository {
     
-    private List<Contact> contacts = Arrays.asList(new Contact("123", "Jhon Snow", "2342353432"), 
-                                                    new Contact("234", "Tyrion Lannister", "2342567545"),
-                                                    new Contact("930", "The Hound", "304883749") );
+    private List<Contact> contacts = new ArrayList<>();
 
     public List<Contact> getContacts() {
         return contacts;
